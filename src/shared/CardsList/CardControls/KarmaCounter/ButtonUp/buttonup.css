@@ -1,0 +1,5 @@
+@media all and (min-width: 1540px) {
+  button.up:hover > svg > path {
+    fill: var(--green);
+  }
+}

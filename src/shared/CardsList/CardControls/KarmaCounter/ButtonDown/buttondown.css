@@ -1,0 +1,5 @@
+@media all and (min-width: 1540px) {
+  button.down:hover > svg > path {
+    fill: var(--orange);
+  }
+}
