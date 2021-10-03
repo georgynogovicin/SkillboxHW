@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from './createdat.css';
 
-export function CreatedAt() {
+interface ICreadetAtProps {
+  createdAt: string,
+}
+
+export function CreatedAt({createdAt}: ICreadetAtProps) {
   return (
     <span className={styles.createdAt}>
       <span className={styles.publishedLabel}>Опубликовано </span>
-      4 часа назад
+      {createdAt}
     </span>
   );
 }

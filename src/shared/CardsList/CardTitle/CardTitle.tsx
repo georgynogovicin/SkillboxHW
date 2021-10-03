@@ -1,10 +1,15 @@
 import React from 'react';
 import styles from './cardtitle.css';
 
-export function CardTitle() {
+interface ICardTitleProps {
+  postLink: string,
+  postTitle: string,
+}
+
+export function CardTitle({postLink, postTitle}: ICardTitleProps) {
   return (
     <h2 className={styles.title}>
-      <a href="#post-link" className={styles.postLink}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos accusamus voluptatum distinctio, iusto molestias culpa illum sunt porro quo deserunt doloremque dolorum excepturi natus praesentium. Expedita doloremque adipisci exercitationem tenetur!</a>
+      <a href={postLink} className={styles.postLink}>{postTitle}</a>
     </h2>
   );
 }
