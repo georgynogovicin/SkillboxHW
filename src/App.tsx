@@ -17,4 +17,4 @@ export function AppComponent() {
   )
 }
 
-export const App = hot(AppComponent);
+export const App = hot(() => <AppComponent />);

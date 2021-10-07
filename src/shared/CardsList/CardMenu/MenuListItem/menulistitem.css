@@ -1,0 +1,35 @@
+.item {
+  display: none;
+  padding: 10px 0 11px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid #ECECEC;
+  cursor: pointer;
+  align-items: center;
+}
+
+.mobile {
+  display: flex;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  color: var(--grey99);
+}
+
+@media all and (min-width: 1024px){
+  .item {
+    display: flex;
+  }
+
+  .icon{
+    width: 16px;
+    height: 16px;
+  }
+}
