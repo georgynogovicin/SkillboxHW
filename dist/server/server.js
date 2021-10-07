@@ -246,7 +246,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+<<<<<<< HEAD
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"CardMenu\": () => (/* binding */ CardMenu)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _utils_react_generate_random_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../utils/react/generate-random-index */ \"./src/utils/react/generate-random-index.ts\");\n/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Dropdown */ \"./src/shared/Dropdown/index.ts\");\n/* harmony import */ var _cardmenu_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cardmenu.css */ \"./src/shared/CardsList/CardMenu/cardmenu.css\");\n/* harmony import */ var _CardMenuList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./CardMenuList */ \"./src/shared/CardsList/CardMenu/CardMenuList/index.ts\");\n/* harmony import */ var _MenuButtonEllipsis__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./MenuButtonEllipsis */ \"./src/shared/CardsList/CardMenu/MenuButtonEllipsis/index.ts\");\n/* harmony import */ var _Icons_Comment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Icons/Comment */ \"./src/shared/Icons/Comment.tsx\");\n/* harmony import */ var _Icons_Share__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Icons/Share */ \"./src/shared/Icons/Share.tsx\");\n/* harmony import */ var _Icons_Hide__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Icons/Hide */ \"./src/shared/Icons/Hide.tsx\");\n/* harmony import */ var _Icons_Save__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Icons/Save */ \"./src/shared/Icons/Save.tsx\");\n/* harmony import */ var _Icons_Complain__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../Icons/Complain */ \"./src/shared/Icons/Complain.tsx\");\n\n\n\n\n\n\n\n\n\n\n\nvar MENU = [{\n  label: \"Комментарий\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons_Comment__WEBPACK_IMPORTED_MODULE_6__.Comment, null)\n}, {\n  label: \"Поделиться\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons_Share__WEBPACK_IMPORTED_MODULE_7__.Share, null)\n}, {\n  label: \"Скрыть\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons_Hide__WEBPACK_IMPORTED_MODULE_8__.Hide, null),\n  showOnMobile: true\n}, {\n  label: \"Сохранить\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons_Save__WEBPACK_IMPORTED_MODULE_9__.Save, null)\n}, {\n  label: \"Пожаловаться\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons_Complain__WEBPACK_IMPORTED_MODULE_10__.Complain, null),\n  showOnMobile: true\n}].map(_utils_react_generate_random_index__WEBPACK_IMPORTED_MODULE_1__.generateId);\nfunction CardMenu() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: _cardmenu_css__WEBPACK_IMPORTED_MODULE_3__[\"default\"].menu\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Dropdown__WEBPACK_IMPORTED_MODULE_2__.Dropdown, {\n    button: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_MenuButtonEllipsis__WEBPACK_IMPORTED_MODULE_5__.MenuButtonEllipsis, null)\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_CardMenuList__WEBPACK_IMPORTED_MODULE_4__.CardMenuList, {\n    menuItems: MENU\n  })));\n}\n\n//# sourceURL=webpack://new-reddit/./src/shared/CardsList/CardMenu/CardMenu.tsx?");
+=======
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"CardMenu\": () => (/* binding */ CardMenu)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _utils_react_generate_random_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../utils/react/generate-random-index */ \"./src/utils/react/generate-random-index.ts\");\n/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Dropdown */ \"./src/shared/Dropdown/index.ts\");\n/* harmony import */ var _cardmenu_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cardmenu.css */ \"./src/shared/CardsList/CardMenu/cardmenu.css\");\n/* harmony import */ var _Icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Icons */ \"./src/shared/Icons/index.ts\");\n/* harmony import */ var _CardMenuList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./CardMenuList */ \"./src/shared/CardsList/CardMenu/CardMenuList/index.ts\");\n\n\n\n\n\n\nvar MENU = [{\n  label: \"Комментарий\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons__WEBPACK_IMPORTED_MODULE_4__.Comment, null)\n}, {\n  label: \"Поделиться\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons__WEBPACK_IMPORTED_MODULE_4__.Share, null)\n}, {\n  label: \"Скрыть\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons__WEBPACK_IMPORTED_MODULE_4__.Hide, null),\n  showOnMobile: true\n}, {\n  label: \"Сохранить\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons__WEBPACK_IMPORTED_MODULE_4__.Save, null)\n}, {\n  label: \"Пожаловаться\",\n  icon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons__WEBPACK_IMPORTED_MODULE_4__.Complain, null),\n  showOnMobile: true\n}].map(_utils_react_generate_random_index__WEBPACK_IMPORTED_MODULE_1__.generateId);\nfunction CardMenu() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: _cardmenu_css__WEBPACK_IMPORTED_MODULE_3__[\"default\"].menu\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Dropdown__WEBPACK_IMPORTED_MODULE_2__.Dropdown, {\n    button: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"button\", {\n      className: _cardmenu_css__WEBPACK_IMPORTED_MODULE_3__[\"default\"].menuButton\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Icons__WEBPACK_IMPORTED_MODULE_4__.Ellipsis, null))\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_CardMenuList__WEBPACK_IMPORTED_MODULE_5__.CardMenuList, {\n    menuItems: MENU,\n    postId: (0,_utils_react_generate_random_index__WEBPACK_IMPORTED_MODULE_1__.generateRandomString)()\n  })));\n}\n\n//# sourceURL=webpack://new-reddit/./src/shared/CardsList/CardMenu/CardMenu.tsx?");
+>>>>>>> Added card-menu-list, card-menu-list-item
 
 /***/ }),
 
@@ -256,7 +260,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+<<<<<<< HEAD
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"CardMenuList\": () => (/* binding */ CardMenuList)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _utils_react_with_key__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../utils/react/with-key */ \"./src/utils/react/with-key.ts\");\n/* harmony import */ var _MenuListItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MenuListItem */ \"./src/shared/CardsList/CardMenu/MenuListItem/index.ts\");\n/* harmony import */ var _cardmenulist_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cardmenulist.css */ \"./src/shared/CardsList/CardMenu/CardMenuList/cardmenulist.css\");\n\n\n\n\nfunction CardMenuList(_ref) {\n  var menuItems = _ref.menuItems;\n  var items = menuItems.map((0,_utils_react_with_key__WEBPACK_IMPORTED_MODULE_1__.withKey)('id')(_MenuListItem__WEBPACK_IMPORTED_MODULE_2__.MenuListItem));\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n    className: _cardmenulist_css__WEBPACK_IMPORTED_MODULE_3__[\"default\"].list\n  }, items, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    className: _cardmenulist_css__WEBPACK_IMPORTED_MODULE_3__[\"default\"].close\n  }, \"\\u0417\\u0430\\u043A\\u0440\\u044B\\u0442\\u044C\"));\n}\n\n//# sourceURL=webpack://new-reddit/./src/shared/CardsList/CardMenu/CardMenuList/CardMenuList.tsx?");
+=======
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"CardMenuList\": () => (/* binding */ CardMenuList)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _utils_react_with_key__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../utils/react/with-key */ \"./src/utils/react/with-key.ts\");\n/* harmony import */ var _MenuListItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../MenuListItem */ \"./src/shared/CardsList/CardMenu/MenuListItem/index.ts\");\n/* harmony import */ var _cardmenulist_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cardmenulist.css */ \"./src/shared/CardsList/CardMenu/CardMenuList/cardmenulist.css\");\n\n\n\n\nfunction CardMenuList(_ref) {\n  var menuItems = _ref.menuItems,\n      postId = _ref.postId;\n  var items = menuItems.map((0,_utils_react_with_key__WEBPACK_IMPORTED_MODULE_1__.withKey)('id')(_MenuListItem__WEBPACK_IMPORTED_MODULE_2__.MenuListItem));\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"ul\", {\n    className: _cardmenulist_css__WEBPACK_IMPORTED_MODULE_3__[\"default\"].list,\n    onClick: function onClick() {\n      return console.log(postId);\n    }\n  }, items, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"li\", {\n    className: _cardmenulist_css__WEBPACK_IMPORTED_MODULE_3__[\"default\"].close\n  }, \"\\u0417\\u0430\\u043A\\u0440\\u044B\\u0442\\u044C\"));\n}\n\n//# sourceURL=webpack://new-reddit/./src/shared/CardsList/CardMenu/CardMenuList/CardMenuList.tsx?");
+>>>>>>> Added card-menu-list, card-menu-list-item
 
 /***/ }),
 
@@ -270,6 +278,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/shared/CardsList/CardMenu/MenuButtonEllipsis/MenuButtonEllipsis.tsx":
 /*!*********************************************************************************!*\
   !*** ./src/shared/CardsList/CardMenu/MenuButtonEllipsis/MenuButtonEllipsis.tsx ***!
@@ -290,6 +299,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+=======
+>>>>>>> Added card-menu-list, card-menu-list-item
 /***/ "./src/shared/CardsList/CardMenu/MenuListItem/MenuListItem.tsx":
 /*!*********************************************************************!*\
   !*** ./src/shared/CardsList/CardMenu/MenuListItem/MenuListItem.tsx ***!
@@ -580,6 +591,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ "./src/shared/Icons/Ellipsis.tsx":
+/*!***************************************!*\
+  !*** ./src/shared/Icons/Ellipsis.tsx ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Ellipsis\": () => (/* binding */ Ellipsis)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction Ellipsis() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"svg\", {\n    width: \"5\",\n    height: \"20\",\n    viewBox: \"0 0 5 20\",\n    fill: \"none\",\n    xmlns: \"http://www.w3.org/2000/svg\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"circle\", {\n    cx: \"2.5\",\n    cy: \"2.5\",\n    r: \"2.5\",\n    fill: \"#D9D9D9\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"circle\", {\n    cx: \"2.5\",\n    cy: \"10\",\n    r: \"2.5\",\n    fill: \"#D9D9D9\"\n  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"circle\", {\n    cx: \"2.5\",\n    cy: \"17.5\",\n    r: \"2.5\",\n    fill: \"#D9D9D9\"\n  }));\n}\n\n//# sourceURL=webpack://new-reddit/./src/shared/Icons/Ellipsis.tsx?");
+
+/***/ }),
+
+>>>>>>> Added card-menu-list, card-menu-list-item
 /***/ "./src/shared/Icons/Hide.tsx":
 /*!***********************************!*\
   !*** ./src/shared/Icons/Hide.tsx ***!
@@ -610,6 +634,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+<<<<<<< HEAD
+=======
+/***/ "./src/shared/Icons/index.ts":
+/*!***********************************!*\
+  !*** ./src/shared/Icons/index.ts ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Comment\": () => (/* reexport safe */ _Comment__WEBPACK_IMPORTED_MODULE_0__.Comment),\n/* harmony export */   \"Complain\": () => (/* reexport safe */ _Complain__WEBPACK_IMPORTED_MODULE_1__.Complain),\n/* harmony export */   \"Ellipsis\": () => (/* reexport safe */ _Ellipsis__WEBPACK_IMPORTED_MODULE_2__.Ellipsis),\n/* harmony export */   \"Hide\": () => (/* reexport safe */ _Hide__WEBPACK_IMPORTED_MODULE_3__.Hide),\n/* harmony export */   \"Save\": () => (/* reexport safe */ _Save__WEBPACK_IMPORTED_MODULE_4__.Save),\n/* harmony export */   \"Share\": () => (/* reexport safe */ _Share__WEBPACK_IMPORTED_MODULE_5__.Share)\n/* harmony export */ });\n/* harmony import */ var _Comment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Comment */ \"./src/shared/Icons/Comment.tsx\");\n/* harmony import */ var _Complain__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Complain */ \"./src/shared/Icons/Complain.tsx\");\n/* harmony import */ var _Ellipsis__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Ellipsis */ \"./src/shared/Icons/Ellipsis.tsx\");\n/* harmony import */ var _Hide__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Hide */ \"./src/shared/Icons/Hide.tsx\");\n/* harmony import */ var _Save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Save */ \"./src/shared/Icons/Save.tsx\");\n/* harmony import */ var _Share__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Share */ \"./src/shared/Icons/Share.tsx\");\n\n\n\n\n\n\n\n//# sourceURL=webpack://new-reddit/./src/shared/Icons/index.ts?");
+
+/***/ }),
+
+>>>>>>> Added card-menu-list, card-menu-list-item
 /***/ "./src/shared/Layout/Layout.tsx":
 /*!**************************************!*\
   !*** ./src/shared/Layout/Layout.tsx ***!
@@ -780,6 +817,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ "./src/shared/CardsList/CardMenu/MenuButtonEllipsis/menubuttonellipsis.css":
 /*!*********************************************************************************!*\
   !*** ./src/shared/CardsList/CardMenu/MenuButtonEllipsis/menubuttonellipsis.css ***!
@@ -790,6 +828,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+=======
+>>>>>>> Added card-menu-list, card-menu-list-item
 /***/ "./src/shared/CardsList/CardMenu/MenuListItem/menulistitem.css":
 /*!*********************************************************************!*\
   !*** ./src/shared/CardsList/CardMenu/MenuListItem/menulistitem.css ***!
