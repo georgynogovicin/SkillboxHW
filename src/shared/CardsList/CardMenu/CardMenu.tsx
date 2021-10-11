@@ -2,30 +2,32 @@ import React from 'react';
 import {generateId, generateRandomString} from '../../../utils/react/generate-random-index';
 import {Dropdown} from '../../Dropdown';
 import styles from './cardmenu.css';
-import {Comment, Complain, Ellipsis, Hide, Save, Share} from '../../Icons'
+import {Ellipsis} from '../../Icons'
 import {CardMenuList} from './CardMenuList';
+import {EIconNames} from '../../../constants/constants';
+import {Icon} from '../../Icon';
 
 const MENU = [
   {
     label: "Комментарий",
-    icon: <Comment />,
+    icon: EIconNames.Comment,
   },
   {
     label: "Поделиться",
-    icon: <Share />,
+    icon: EIconNames.Share,
   },
   {
     label: "Скрыть",
-    icon: <Hide />,
+    icon: EIconNames.Hide,
     showOnMobile: true,
   },
   {
     label: "Сохранить",
-    icon: <Save />,
+    icon: EIconNames.Save,
   },
   {
     label: "Пожаловаться",
-    icon: <Complain />,
+    icon: EIconNames.Complain,
     showOnMobile: true,
   }
 ].map(generateId);
@@ -33,7 +35,7 @@ const MENU = [
 export function CardMenu() {
   return (
     <div className={styles.menu}>
-      <Dropdown button={<button className={styles.menuButton}><Ellipsis /></button>}>
+      <Dropdown button={<button className={styles.menuButton}><Icon name={EIconNames.Ellipsis}/></button>}>
         <CardMenuList menuItems={MENU} postId={generateRandomString()} />
       </Dropdown>
     </div>
