@@ -17,4 +17,5 @@ export enum EIconNames {
   Save = 'Save',
   Share = 'Share',
   Ellipsis = 'Ellipsis',
+  Anon = 'Anon',
 }
