@@ -1,17 +1,17 @@
 import React from 'react';
-import {User} from '../Card/types';
 import styles from './userlink.css';
 
 interface IUserLinkProps {
-  user: User,
+  username: string,
+  userLink: string,
+  avatarUrl?: string
 }
 
-export function UserLink({user}: IUserLinkProps) {
-  const {avatarUrl, userLink, name, avatarAlt} = user;
+export function UserLink({username, userLink, avatarUrl}: IUserLinkProps) {
   return (
     <div className={styles.userLink}>
-      <img className={styles.avatar} src={avatarUrl} alt={avatarAlt}/>
-      <a href={userLink} className={styles.userName}>{name}</a>
+      {avatarUrl && <img className={styles.avatar} src={avatarUrl} alt={username}/>}
+      <a href={userLink} className={styles.userName}>{username}</a>
     </div>
   );
 }
