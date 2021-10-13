@@ -5,14 +5,15 @@ import {UserLink} from '../UserLink';
 import styles from './metadata.css';
 
 interface IMetaDataProps {
-  user: User,
-  createdAt: string,
+  username: string,
+  userLink: string,
+  createdAt: number,
 }
 
-export function MetaData({user, createdAt}: IMetaDataProps) {
+export function MetaData({username, userLink, createdAt}: IMetaDataProps) {
   return (
     <div className={styles.metaData}>
-      <UserLink user={user} />
+      <UserLink username={username} userLink={userLink} />
       <CreatedAt createdAt={createdAt}/>
     </div>
   );

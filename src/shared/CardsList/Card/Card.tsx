@@ -5,29 +5,21 @@ import {CardTitle} from '../CardTitle';
 import {CardPreview} from '../CardPreview';
 import {CardMenu} from '../CardMenu';
 import {CardControls} from '../CardControls';
-
-const exampleCard = {
-  user: {
-    name: "John Doe",
-    avatarUrl: "https://cdn.dribbble.com/users/1259559/avatars/normal/03d2ec443a4df3da75d0c025d43d0a82.png?1607523381",
-    avatarAlt: "avatar-alt",
-    userLink: "#user-link"
-  },
-  createdAt: "3.10.2021",
-  postLink: "#post-link",
-  postTitle: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos accusamus voluptatum distinctio, iusto molestias culpa illum sunt porro quo deserunt doloremque dolorum excepturi natus praesentium. Expedita doloremque adipisci exercitationem tenetur!",
-  previewUrl: "https://cdn.dribbble.com/users/4540442/screenshots/16558334/media/c4a086e3cf000c7309d3b9aa226539a2.png",
-  previewAlt: "preview alt"
+import {Post} from '../hooks/usePostData';
+interface ICardProps {
+  post: Post;
 }
 
-export function Card() {
+export function Card({post}: ICardProps) {
+  const {created_utc, author, permalink, title, url, thumbnail} = post;
+
   return (
     <li className={styles.card}>
       <div className={styles.textContent}>
-        <MetaData user={exampleCard.user} createdAt={exampleCard.createdAt}/>
-        <CardTitle postLink={exampleCard.postLink} postTitle={exampleCard.postTitle}/>
+        <MetaData username={author} userLink={permalink} createdAt={created_utc}/>
+        <CardTitle postLink={url} postTitle={title}/>
       </div>
-      <CardPreview previewUrl={exampleCard.previewUrl} previewAlt={exampleCard.previewAlt}/>
+      <CardPreview previewUrl={thumbnail} previewAlt={title}/>
       <CardMenu />
       <CardControls />
     </li>
