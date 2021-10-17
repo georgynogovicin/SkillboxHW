@@ -1,6 +1,6 @@
 import React from "react";
 
-function pickFromSyntheticEvent<T extends HTMLElement> () {
+export function pickFromSyntheticEvent<T extends HTMLElement> () {
   return <K extends keyof T>(key: K) => 
     <E extends ((t: T[K]) => void)>(fn: E) => 
       (e: React.SyntheticEvent<T>) => 
@@ -8,5 +8,5 @@ function pickFromSyntheticEvent<T extends HTMLElement> () {
 };
 
 
-export const getValue = pickFromSyntheticEvent<HTMLInputElement>()("value");
+export const getValue = pickFromSyntheticEvent<HTMLInputElement | HTMLTextAreaElement>()('value');
 export const getChecked = pickFromSyntheticEvent<HTMLInputElement>()("checked");

@@ -33,11 +33,15 @@ const MENU = [
 ].map(generateId);
 
 export function CardMenu() {
+  const button = (
+    <button className={styles.menuButton}>
+      <Icon name={EIconNames.Ellipsis}/>
+    </button>
+  )
+
   return (
     <div className={styles.menu}>
-      <Dropdown button={<button className={styles.menuButton}><Icon name={EIconNames.Ellipsis}/></button>}>
-        <CardMenuList menuItems={MENU} postId={generateRandomString()} />
-      </Dropdown>
+      <Dropdown button={button} items={MENU} />
     </div>
   );
 }
