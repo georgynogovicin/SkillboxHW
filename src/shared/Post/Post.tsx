@@ -1,6 +1,6 @@
 import React, {useRef} from 'react';
 import {useOutsideClick} from '../CardsList/hooks/useOutsideClick';
-import {CommentForm} from '../CommentForm';
+import {CommentFormContainer} from '../CommentFormContainer';
 import {Comments} from '../Comments';
 import styles from './post.css';
 
@@ -21,7 +21,7 @@ export function Post({onClose}: IPost) {
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam blanditiis libero ipsa voluptatibus ex, debitis perspiciatis fuga autem molestiae culpa numquam consectetur voluptates, facere nulla earum accusamus soluta perferendis.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam blanditiis libero ipsa voluptatibus ex, debitis perspiciatis fuga autem molestiae culpa numquam consectetur voluptates, facere nulla earum accusamus soluta perferendis.</p>
       </div>
-      <CommentForm />
+      <CommentFormContainer />
       <Comments />
     </div>
   )
