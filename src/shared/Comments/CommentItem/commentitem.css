@@ -1,0 +1,32 @@
+.commentHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 33%;
+  margin-bottom: 13px;
+}
+
+.time {
+  color: var(--greyC4)
+}
+
+.league {
+  display: block;
+  background-color: var(--greyC4);
+  padding: 3px;
+}
+
+.commentControls {
+  margin: 13px 0 13px 0;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.commentControls button {
+  display: flex;
+}
+.commentControls button > span{
+  margin-left: 5px;
+}

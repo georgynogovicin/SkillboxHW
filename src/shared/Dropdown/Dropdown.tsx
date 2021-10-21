@@ -1,16 +1,19 @@
 import React, {useEffect, useState} from 'react';
 import {NOOP} from '../../utils/js/noop';
+import {ListItem} from '../CardsList/CardMenu/MenuListItem/types';
+import {Portal} from '../Portal';
 import styles from './dropdown.css';
+import {DropDownList} from './DropDownList';
 
 interface IDropdownProps {
   button: React.ReactNode;
-  children: React.ReactNode;
+  items: ListItem[];
   isOpen?: boolean;
   onOpen?: () => void;
   onClose?: () => void;
 }
 
-export function Dropdown({button, children, isOpen, onOpen = NOOP, onClose = NOOP}: IDropdownProps) {
+export function Dropdown({button, items, isOpen, onOpen = NOOP, onClose = NOOP}: IDropdownProps) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(isOpen);
 
   useEffect(() => {
@@ -26,18 +29,20 @@ export function Dropdown({button, children, isOpen, onOpen = NOOP, onClose = NOO
       setIsDropdownOpen(!isDropdownOpen)
     }
   }
-  
+
+  const handleClose = () => {
+    setIsDropdownOpen(false);
+  }
+
   return (
     <div className={styles.container}>
       <div onClick={() => handleOpen()}>
         {button}
       </div>
       {isDropdownOpen && (
-        <div className={styles.listContainer}>
-          <div onClick={() => setIsDropdownOpen(false)} className={styles.list}>
-            {children}
-          </div>
-        </div>
+        <Portal>
+          <DropDownList items={items} onClose={handleClose}/>
+        </Portal>
       )}
     </div>
   );

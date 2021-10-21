@@ -1,0 +1,19 @@
+.listContainer {
+  position: fixed;
+    top: 15%;
+    right: 15%;
+    z-index: 99999;
+}
+
+.list {
+  z-index: 1;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  width: max-content;
+  font-size: 15px;
+  line-height: 17px;
+  background-color: var(--greyF4);
+  border-radius: 2px;
+  border: 1px solid var(--greyC4);
+}

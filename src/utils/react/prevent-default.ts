@@ -1,11 +1,11 @@
-function preventDefault<T extends (e: any) => void>(fn: T) {
+export function preventDefault<T extends (e: any) => void>(fn: T) {
   return <E extends React.SyntheticEvent<any>>(e: E) => {
     e.preventDefault();
     fn(e);
   }
 }
 
-function stopPropagation<T extends (e: any) => void>(fn: T) {
+export function stopPropagation<T extends (e: any) => void>(fn: T) {
   return <E extends React.SyntheticEvent<any>>(e: E) => {
     e.stopPropagation();
     fn(e);
