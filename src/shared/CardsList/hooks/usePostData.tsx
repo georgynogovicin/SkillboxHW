@@ -1,6 +1,7 @@
 import axios from 'axios';
-import {useContext, useEffect, useState} from 'react';
-import {tokenContext} from '../../context/tokenContext';
+import {useEffect, useState} from 'react';
+import {useSelector} from 'react-redux';
+import {RootState} from '../../../redux/store';
 
 export type Post = {
   id?: string;
@@ -19,7 +20,7 @@ export type PostItem = {
 }
 
 export function usePostData() {
-  const token = useContext(tokenContext);
+  const token = useSelector<RootState, string>(state => state.token)
   const [postData, setPostData] = useState<PostItem[]>([]);
 
   useEffect(() => {

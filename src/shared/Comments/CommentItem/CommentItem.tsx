@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {EColor, EIconNames} from '../../../constants/constants';
 import {UserLink} from '../../CardsList/UserLink';
-import {CommentForm} from '../../CommentForm';
-import {CommentFormUncontrolled} from '../../CommentForm/CommentFormUncontrolled';
+import {CommentFormContainer} from '../../CommentFormContainer';
 import {Icon} from '../../Icon';
 import {Text} from '../../Text';
 import styles from './commentitem.css';
@@ -44,7 +43,7 @@ export function CommentItem() {
       </div>
       {
         formIsOpen && (
-          <CommentForm initialValue={userName}/>
+          <CommentFormContainer initialValue={userName}/>
         )
       }
     </div>
