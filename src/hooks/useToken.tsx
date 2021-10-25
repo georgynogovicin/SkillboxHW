@@ -1,13 +1,11 @@
 import {useEffect} from "react";
 import {useDispatch} from "react-redux";
-import {setToken} from "../redux/store";
+import {getToken} from "../redux/store";
 
 export function useToken() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if(window.__token__) {
-      dispatch(setToken(window.__token__));
-    }
+    dispatch(getToken())
   }, []);
 }
