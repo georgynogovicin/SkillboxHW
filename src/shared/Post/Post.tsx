@@ -8,6 +8,8 @@ interface IPost {
   onClose(): void;
 }
 
+const userName = "John Doe";
+
 export function Post({onClose}: IPost) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -21,7 +23,7 @@ export function Post({onClose}: IPost) {
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam blanditiis libero ipsa voluptatibus ex, debitis perspiciatis fuga autem molestiae culpa numquam consectetur voluptates, facere nulla earum accusamus soluta perferendis.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aperiam blanditiis libero ipsa voluptatibus ex, debitis perspiciatis fuga autem molestiae culpa numquam consectetur voluptates, facere nulla earum accusamus soluta perferendis.</p>
       </div>
-      <CommentFormContainer />
+      <CommentFormContainer initialValue={userName}/>
       <Comments />
     </div>
   )
