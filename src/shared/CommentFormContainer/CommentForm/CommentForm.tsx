@@ -1,7 +1,6 @@
-import React, {FormEvent, useEffect, useRef} from 'react';
+import React, {FormEvent, useRef} from 'react';
 import styles from './commentform.css';
-import {getValue} from '../../../utils/react/from-syntetic-event';
-import {preventDefault} from '../../../utils/react/prevent-default';
+import {useFormik} from 'formik';
 
 interface CommentFormProps {
   value?: string;
@@ -9,19 +8,40 @@ interface CommentFormProps {
   handleSubmit(e: FormEvent): void;
 }
 
-export function CommentForm({value, handleChange, handleSubmit}: CommentFormProps) {
-  const ref = useRef<HTMLTextAreaElement>(null);
-  
-  useEffect(() => {
-    ref.current?.focus();
-  }, []);
+interface Values {
+  comment: string
+}
+
+const validate = (values: Values) => {
+  const errors = {} as Values
+
+  if (values.comment.length < 3) {
+    errors.comment = "Должно быть более 3-х символов" 
+  }
+
+  return errors;
+}
+
+export function CommentForm({value, handleChange}: CommentFormProps) {
+  const form = useFormik({
+    initialValues: {
+      comment: value ?? "",
+    },
+    validate,
+    onSubmit: (values: Values) => {
+      handleChange(values.comment)
+      console.log(`Комментарий "${values.comment}" успешно отправлен в store`)
+    }
+  });
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={form.handleSubmit}>
       <textarea className={styles.input}
-                value={value}
-                onChange={preventDefault(getValue(handleChange))}
-                ref={ref} />
+                onChange={form.handleChange}
+                onBlur={form.handleBlur}
+                name="comment"
+                value={form.values.comment}/>
+      <div>{form.errors.comment}</div>
       <button type="submit" className={styles.button}>
         Комментировать
       </button>
