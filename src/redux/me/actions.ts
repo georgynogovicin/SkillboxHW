@@ -59,11 +59,17 @@ export const getUserAsync = (): ThunkAction<void, RootState, unknown, Action<str
     dispatch: ThunkDispatch<MeState, any, MeAction>,
     getState
   ) => {
+    
+    const token = getState().token;
+
+    if (token === "undefined") return;
+    
     dispatch(meRequest());
+    
     axios.get<UserData>(
       'https://oauth.reddit.com/api/v1/me',
       {
-        headers: {Authorization: `bearer ${getState().token}`}
+        headers: {Authorization: `bearer ${token}`}
       }
     )
       .then((res) => {
@@ -71,7 +77,6 @@ export const getUserAsync = (): ThunkAction<void, RootState, unknown, Action<str
         dispatch(meRequestSuccess({name: userData.name, iconImg: userData.icon_img}));
       })
       .catch((e) => {
-        console.log(e);
         dispatch(meRequestError(e))
       })
   }

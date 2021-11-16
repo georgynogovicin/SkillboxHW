@@ -5,7 +5,7 @@ import {MeAction, meInitialState, meReducer, MeState} from "./me/meStore";
 
 export type RootState = {
   commentText: string;
-  token: string;
+  token: string | undefined;
   me: MeState;
 }
 
@@ -42,12 +42,6 @@ export const setToken: ActionCreator<SetTokenAction> = (token: string) => {
     type: RootStateActions.SET_TOKEN,
     payload: token
   }
-}
-
-export const getToken = (): ThunkAction<void, RootState, unknown, Action<string>> => (dispatch) => {
-  const token = window.__token__;
-
-  dispatch(setToken(token));
 }
 
 export type MyAction = SetTokenAction | UpdateCommentAction | MeAction
