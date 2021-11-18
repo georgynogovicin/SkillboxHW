@@ -1,18 +1,20 @@
 import React, {useRef} from 'react';
+import {useHistory} from 'react-router-dom';
 import {useOutsideClick} from '../CardsList/hooks/useOutsideClick';
 import {CommentFormContainer} from '../CommentFormContainer';
 import {Comments} from '../Comments';
 import styles from './post.css';
 
-interface IPost {
-  onClose(): void;
-}
-
 const userName = "John Doe";
 
-export function Post({onClose}: IPost) {
+export function Post() {
   const ref = useRef<HTMLDivElement>(null);
+  const history = useHistory();
 
+  const onClose = () => {
+    history.push("/");
+  }
+  
   useOutsideClick(ref, onClose)
 
   return (

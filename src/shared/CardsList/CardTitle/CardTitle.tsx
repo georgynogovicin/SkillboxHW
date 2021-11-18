@@ -1,8 +1,5 @@
-import React, {useState} from 'react';
-import {pipe} from '../../../utils/js/pipe';
-import {preventDefault, stopPropagation} from '../../../utils/react/prevent-default';
-import {Portal} from '../../Portal';
-import {Post} from '../../Post';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import styles from './cardtitle.css';
 
 interface ICardTitleProps {
@@ -11,20 +8,11 @@ interface ICardTitleProps {
 }
 
 export function CardTitle({postLink, postTitle}: ICardTitleProps) {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const handleClick = () => {
-    setIsModalOpen(true);
-  }
-
   return (
     <h2 className={styles.title}>
-      <a className={styles.postLink} onClick={pipe(preventDefault, stopPropagation, handleClick)}>{postTitle}</a>
-
-      {isModalOpen && (
-        <Portal>
-          <Post onClose={() => setIsModalOpen(false)}/>
-        </Portal>
-      )}
+      <Link to={`/posts/${postTitle}`} className={styles.postLink}>
+          {postTitle}
+      </Link>
     </h2>
   );
 }
