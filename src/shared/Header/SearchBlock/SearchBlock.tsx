@@ -13,4 +13,4 @@ export function SearchBlock() {
       <UserBlock username={loading ? "...Загрузка" : user.name} avatarSrc={user.iconImg}/>
     </div>
   );
-}
+};

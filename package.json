@@ -6,7 +6,7 @@
   "scripts": {
     "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
     "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
-    "dev": "env NODE_ENV=development CLIENT_ID=DbMYLZw-aXUtuoM3cNE9qQ CLIENT_PASS=d9FpN5tO-NXhI1rIDiy3-R1gklVdpw node ./bin/dev.js",
+    "dev": "env NODE_ENV=development CLIENT_ID=jX6MapNVQC9F2kzmFYyEDA CLIENT_PASS=l5z7Od2iYfFDIlFLvs5GgTOH4XqVcg node ./bin/dev.js",
     "test": "jest"
   },
   "repository": {

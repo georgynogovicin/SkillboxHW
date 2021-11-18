@@ -6,7 +6,6 @@ import "./main.global.css";
 import {Header} from './shared/Header';
 import {Content} from './shared/Content';
 import {CardsList} from './shared/CardsList';
-import {PostContext} from './shared/context/postContext';
 import {Provider} from 'react-redux';
 import {composeWithDevTools} from 'redux-devtools-extension';
 import {rootReducer} from './redux/store';
@@ -17,14 +16,12 @@ const store = createStore(rootReducer as any, composeWithDevTools(applyMiddlewar
 export function AppComponent() {
   return (
     <Provider store={store}>
-      <PostContext>
-        <Layout>
-          <Header />
-          <Content>
-            <CardsList />
-          </Content>
-        </Layout>
-      </PostContext>
+      <Layout>
+        <Header />
+        <Content>
+          <CardsList />
+        </Content>
+      </Layout>
     </Provider>
   )
 }
