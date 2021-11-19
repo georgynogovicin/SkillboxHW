@@ -15,7 +15,7 @@ app.get("/auth", (req, res) => {
       'https://www.reddit.com/api/v1/access_token',
       `grant_type=authorization_code&code=${req.query.code}&redirect_uri=${process.env.HOST_NAME}:${PORT}/auth`,
       {
-        auth: {username: process.env.CLIENT_ID, password: `${process.env.CLIENT_PASS}`},
+        auth: {username: process.env.CLIENT_ID, password: process.env.CLIENT_PASS},
         headers: {"Content-type": "application/x-www-form-urlencoded"}
       }
     )
