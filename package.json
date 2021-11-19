@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "build:dev": "env NODE_ENV=development webpack --config webpack.config.js",
-    "build:prod": "env NODE_ENV=production webpack --config webpack.config.js",
+    "build": "env NODE_ENV=production webpack --config webpack.config.js",
     "dev": "env NODE_ENV=development CLIENT_ID=jX6MapNVQC9F2kzmFYyEDA CLIENT_PASS=l5z7Od2iYfFDIlFLvs5GgTOH4XqVcg node ./bin/dev.js",
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./dist/server/server.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,23 @@
     "url": "https://github.com/georgynogovicin/SkillboxHW/issues"
   },
   "homepage": "https://github.com/georgynogovicin/SkillboxHW#readme",
-  "devDependencies": {
+  "dependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-react": "^7.14.5",
+    "axios": "^0.22.0",
+    "babel-loader": "^8.2.2",
+    "classnames": "^2.3.1",
+    "express": "^4.17.1",
+    "formik": "^2.2.9",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.13",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.15.6",
     "@babel/preset-env": "^7.15.6",
@@ -54,23 +74,5 @@
     "webpack-dev-server": "^4.2.1",
     "webpack-hot-middleware": "^2.25.1",
     "webpack-node-externals": "^3.0.0"
-  },
-  "dependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/preset-react": "^7.14.5",
-    "axios": "^0.22.0",
-    "babel-loader": "^8.2.2",
-    "classnames": "^2.3.1",
-    "express": "^4.17.1",
-    "formik": "^2.2.9",
-    "moment": "^2.29.1",
-    "nodemon": "^2.0.13",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-redux": "^7.2.5",
-    "react-router-dom": "^5.3.0",
-    "redux": "^4.1.1",
-    "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.3.0"
   }
 }
