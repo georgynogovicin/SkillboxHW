@@ -1,9 +1,8 @@
 import axios from 'axios';
-import React, {RefObject} from 'react';
+import {RefObject} from 'react';
 import {useEffect, useState} from 'react';
 import {useSelector} from 'react-redux';
 import {RootState} from '../../../redux/store';
-import {Card} from '../Card';
 
 export type Post = {
   id?: string;
@@ -78,16 +77,9 @@ export function usePostData<T extends HTMLElement = HTMLElement>(ref: RefObject<
     return () => observer.unobserve(ref.current!);
   }, [ref.current, token, after, loadingCount])
 
-  const items = posts.map(({data}) => {
-    const {id, ...rest} = data;
-    return (
-      <Card key={id} post={rest} />
-    )
-  });
-
   return {
     state: {
-      items,
+      posts,
       error,
       loading,
       loadingCount,
